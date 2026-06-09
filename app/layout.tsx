@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import './globals.css';
 import ServiceWorkerRegistrar from '@/components/ServiceWorkerRegistrar';
+import BackToTop from '@/components/BackToTop';
 
 export const metadata: Metadata = {
   title: 'Java Interview Notes',
@@ -36,6 +37,7 @@ export default function RootLayout({
       </head>
       <body>
         <ServiceWorkerRegistrar />
+        <BackToTop />
         {children}
       </body>
     </html>

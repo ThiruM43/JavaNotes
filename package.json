@@ -1,12 +1,13 @@
 {
   "name": "java-interview-notes",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/generate-search-index.cjs",
+    "prebuild": "node scripts/generate-search-index.cjs",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "next build"
+    "start": "next start"
   },
   "dependencies": {
     "next": "14.2.5",
@@ -19,7 +20,8 @@
     "rehype-autolink-headings": "7.1.0",
     "highlight.js": "11.10.0",
     "gray-matter": "4.0.3",
-    "lucide-react": "0.383.0"
+    "lucide-react": "0.383.0",
+    "fuse.js": "7.0.0"
   },
   "devDependencies": {
     "@types/node": "20.14.10",
